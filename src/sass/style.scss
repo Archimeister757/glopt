@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+   box-sizing: border-box;
+   font-family: 'Roboto', sans-serif;
+   font-family: 'Roboto Condensed', sans-serif;
+}
+h1,
+h2,
+body,
+p {
+   margin: 0;
+}
+
+.container {
+   width: 1140px;
+   margin: 0 auto;
+}
+
+.show {
+   display: block;
+}
+.hide {
+   display: none;
+}
+
+@import 'base/variables';
+@import 'base/mixins';
+@import 'blocks/promo';
+@import 'blocks/buttons';
