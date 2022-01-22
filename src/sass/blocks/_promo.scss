@@ -1,0 +1,110 @@
+.promo {
+   padding: 25px 10px 80px 10px;
+   background: url('../img/promo/plane.jpg') center (center/cover) no-repeat;
+   &__up {
+      display: grid;
+      grid-template-columns:
+         minmax(auto, 96px) minmax(auto, 620px)
+         minmax(auto, 165px) minmax(auto, 160px);
+      justify-content: space-between;
+      align-items: center;
+   }
+   &__menu {
+      display: grid;
+      grid-template-columns: repeat(6, auto);
+      justify-content: space-between;
+      &-item {
+         position: relative;
+         list-style-type: none;
+         border-right: 1px dotted rgba(255, 255, 255, 0.397);
+         padding-right: 15px;
+         &:last-child {
+            border-right: none;
+         }
+      }
+      a {
+         font-size: 15px;
+         line-height: 16px;
+         font-weight: 400;
+         color: #ffffff;
+         text-decoration: none;
+         &:hover {
+            color: $main-color;
+            transition: 0.5s;
+         }
+      }
+   }
+   &__phone {
+      display: grid;
+      justify-content: right;
+   }
+   &__text {
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 300;
+      text-align: right;
+      color: #ffffff;
+   }
+   &__number {
+      right: 0;
+      font-size: 19px;
+      line-height: 24px;
+      font-weight: 700;
+      color: #ffffff;
+      text-decoration: none;
+   }
+   &__header {
+      display: grid;
+      justify-content: center;
+   }
+   &__name {
+      margin-top: 45px;
+      text-align: center;
+      font-size: 24px;
+      line-height: 1.2;
+      font-weight: 300;
+      color: #ffffff;
+   }
+   &__title {
+      margin-top: 25px;
+      font-family: 'Roboto Condensed';
+      text-align: center;
+      font-size: 72px;
+      line-height: 1.2;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #ec644b;
+   }
+   &__subtitle {
+      margin-top: 10px;
+      font-family: 'Roboto Condensed';
+      text-align: center;
+      font-size: 42px;
+      line-height: 1.2;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #ffffff;
+   }
+   &__divider {
+      margin: 38px auto 0 auto;
+   }
+   &__block {
+      display: grid;
+      margin-top: 30px;
+      grid-template-columns: repeat(4, minmax(auto, 260px));
+      justify-content: center;
+      column-gap: 35px;
+   }
+   &__icon {
+      display: block;
+      margin: 0 auto;
+   }
+   &__descr {
+      margin-top: 15px;
+      text-align: center;
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 300;
+      color: #ffffff;
+   }
+}
