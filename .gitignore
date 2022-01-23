@@ -1,5 +1,2 @@
 node_modules
-<<<<<<< HEAD
-*.json
-=======
->>>>>>> 8c6abd7485941781e6a260445860e4ba3926832d
+/*.json
