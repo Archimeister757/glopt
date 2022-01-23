@@ -1,9 +1,21 @@
 {
+<<<<<<< HEAD
   "name": "glopt-master",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {},
+=======
+  "name": "glopt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+>>>>>>> 8c6abd7485941781e6a260445860e4ba3926832d
   "devDependencies": {
     "browser-sync": "^2.27.7",
     "gulp": "^4.0.2",
@@ -13,10 +25,14 @@
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.49.0"
+<<<<<<< HEAD
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC"
+=======
+  }
+>>>>>>> 8c6abd7485941781e6a260445860e4ba3926832d
 }
