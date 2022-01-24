@@ -25,6 +25,7 @@
          }
       }
       a {
+         font-family: 'Roboto';
          font-size: 15px;
          line-height: 16px;
          font-weight: 400;
@@ -41,6 +42,7 @@
       justify-content: right;
    }
    &__text {
+      font-family: 'Roboto';
       font-size: 14px;
       line-height: 24px;
       font-weight: 300;
@@ -48,6 +50,7 @@
       color: #ffffff;
    }
    &__number {
+      font-family: 'Roboto';
       right: 0;
       font-size: 19px;
       line-height: 24px;
@@ -60,6 +63,7 @@
       justify-content: center;
    }
    &__name {
+      font-family: 'Roboto';
       margin-top: 45px;
       text-align: center;
       font-size: 24px;
@@ -102,6 +106,7 @@
       margin: 0 auto;
    }
    &__descr {
+      font-family: 'Roboto';
       margin-top: 15px;
       text-align: center;
       font-size: 16px;
