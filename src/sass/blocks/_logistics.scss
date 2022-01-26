@@ -1,3 +1,12 @@
 .logistics {
    padding-bottom: 60px;
+   &__blocks {
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(auto, 360px));
+      justify-content: space-between;
+      img {
+         margin-bottom: 20px;
+      }
+   }
 }
