@@ -6,7 +6,7 @@
 @import 'blocks/buttons';
 @import 'blocks/advantages';
 @import 'blocks/logistics';
-@import 'base/media';
+@import 'blocks/agent';
 
 * {
    box-sizing: border-box;
@@ -50,7 +50,7 @@ p {
    color: #3a3a3a;
 }
 
-.header {
+.topic {
    margin-bottom: 7px;
    font-family: 'Roboto';
    font-size: 16px;
@@ -58,7 +58,7 @@ p {
    font-weight: 700;
    color: $main-color;
 }
-.header_center {
+.topic_center {
    text-align: center;
 }
 
@@ -79,3 +79,30 @@ p {
    font-weight: 300;
    color: #2e2e2e;
 }
+
+.icon {
+   display: block;
+   margin: 0 auto;
+}
+
+.header {
+   margin: 20px 0;
+   font-family: Roboto;
+   text-align: center;
+   font-size: 26px;
+   line-height: 23px;
+   font-weight: 700;
+   color: #ffffff;
+}
+.subheader {
+   margin: 0 auto;
+   text-align: center;
+   font-family: Roboto;
+   max-width: 1000px;
+   font-size: 19px;
+   line-height: 27px;
+   font-weight: 300;
+   color: #ffffff;
+}
+
+@import 'base/media';
