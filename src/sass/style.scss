@@ -7,6 +7,7 @@
 @import 'blocks/advantages';
 @import 'blocks/logistics';
 @import 'blocks/agent';
+@import 'blocks/delivery';
 
 * {
    box-sizing: border-box;
@@ -48,6 +49,9 @@ p {
    font-size: 14px;
    font-weight: 300;
    color: #3a3a3a;
+   &_center {
+      text-align: center;
+   }
 }
 
 .topic {
