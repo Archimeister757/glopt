@@ -17,17 +17,14 @@
       }
       &-wrapper {
          display: flex;
-         width: calc(200% + 40px)   ;
+         width: calc(200% + 40px);
       }
       &-content {
-         padding: 0 15px;
+         padding: 0 20px 0 15px;
          width: 50%;
-         
-         margin-right: 20px;
          // transform: translateX(0%);
          transition: 0.5s all;
          &_hide {
-            
             margin-right: 0px;
             transform: translateX(-100%);
          }
@@ -53,21 +50,20 @@
             color: #2e2e2e;
             margin: 0 0 10px 20px;
             &::before {
-                position: absolute;
-                content: '';
-                width: 7px;
-                height: 7px;
-                background-color: $main-color;
-                left: -18px;
-                top: 7px;
-
+               position: absolute;
+               content: '';
+               width: 7px;
+               height: 7px;
+               background-color: $main-color;
+               left: -18px;
+               top: 7px;
             }
-        }
+         }
       }
       &-hat {
          margin-bottom: 25px;
          padding-top: 18px;
-         width: 267px;
+         width: 100%;
          min-height: 61px;
          background-color: #25333c;
          font-family: Roboto;

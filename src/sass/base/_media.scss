@@ -18,6 +18,19 @@
          grid-template-columns: repeat(3, minmax(auto, 300px));
       }
    }
+   .delivery {
+      &__cards {
+         grid-template-columns: repeat(auto-fill, minmax(auto, 230px));
+         justify-content: space-around;
+         row-gap: 20px;
+      }
+      &__card {
+         width: 230px;
+         &-hat {
+            margin-bottom: 15px;
+         }
+      }
+   }
 }
 
 @media (max-width: 992px) {
@@ -297,6 +310,30 @@
          grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
          grid-template-rows: auto;
          row-gap: 25px;
+      }
+   }
+   .delivery {
+      padding: 40px 0;
+      &__cards {
+         grid-template-columns: repeat(auto-fill, minmax(auto, 210px));
+         justify-content: space-around;
+         gap: 30px;
+      }
+      &__card {
+         width: 210px;
+         height: 330px;
+         button {
+            margin: 15px auto;
+         }
+         &-list {
+            li {
+               font-size: 13px;
+            }
+         }
+         &-hat {
+            min-height: 55px;
+            font-size: 14px;
+         }
       }
    }
    .title {
