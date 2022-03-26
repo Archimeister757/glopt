@@ -96,6 +96,14 @@
          row-gap: 40px;
       }
    }
+   .consultation {
+      &__form {
+         min-width: 670px;
+         input {
+            width: 220px;
+         }
+      }
+   }
 }
 
 @media (max-width: 768px) {
@@ -223,6 +231,18 @@
    .subheader {
       font-size: 16px;
    }
+   .consultation {
+      &__title {
+         font-size: 24px;
+      }
+      &__form {
+         min-width: 488px;
+         input {
+            width: 160px;
+            padding-left: 15px;
+         }
+      }
+   }
 }
 
 @media (max-width: 576px) {
@@ -304,6 +324,10 @@
       height: 45px;
       font-size: 13px;
    }
+   .btn_form {
+      width: 160px;
+      height: 40px;
+   }
    .advantages {
       padding: 40px 10px;
       &__items {
@@ -334,6 +358,38 @@
             min-height: 55px;
             font-size: 14px;
          }
+      }
+   }
+   .consultation {
+      &__title {
+         font-size: 20px;
+      }
+      &__wrapper {
+         height: 250px;
+         button {
+            bottom: -8%;
+         }
+         &::before {
+            width: 110px;
+         }
+         &::after {
+            width: 185px;
+         }
+      }
+      
+      &__form {
+         display: grid;
+         grid-template-rows: repeat(3, 45px);
+         row-gap: 10px;
+         min-width: 250px;
+         input {
+            width: 250px;
+         }
+      }
+      &__icon {
+         width: 85px;
+         height: 85px;
+         top: -20%;
       }
    }
    .title {
