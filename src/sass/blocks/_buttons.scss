@@ -28,5 +28,12 @@
    width: 180px;
 }
 .back {
+   position: absolute;
+   bottom: 25px;
+   left: calc(50% - 10px);
+   transform: translateX(-50%);
+}
+.next {
+   display: block;
    margin: 25px auto;
 }
