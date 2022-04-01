@@ -1,3 +1,23 @@
 .algorithm {
     padding: 60px 0;
+    &__wrapper {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(auto, 260px));
+        justify-content: space-between;
+        &_second {
+            grid-template-columns: repeat(3, minmax(auto, 260px));
+            justify-content: center;
+            column-gap: 35px;
+        }
+        &-item {
+            img {
+                display: block;
+                margin: 0 auto 10px auto;
+            }
+            h3 {
+                text-align: center;
+            }
+        }
+    }
 }
