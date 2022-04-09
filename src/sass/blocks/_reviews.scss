@@ -1,0 +1,28 @@
+.reviews {
+   padding: 60px 0;
+   &__blocks {
+      margin-top: 30px;
+      position: relative;
+   }
+   &__block {
+      margin: 0 auto;
+      max-width: 615px;
+      img {
+         display: block;
+         margin: 0 auto 20px auto;
+      }
+   }
+}
+.arrow {
+   position: absolute;
+   top: 30px;
+   cursor: pointer;
+}
+.arrow_back {
+   transform: translateX(-50%);
+   left: 40%;
+}
+.arrow_next {
+   transform: translateX(50%);
+   right: 40%;
+}
