@@ -34,13 +34,6 @@
          left: 50%;
          transform: translateX(-50%);
       }
-      button {
-         position: absolute;
-         bottom: -15%;
-         left: 50%;
-         transform: translateX(-50%);
-         z-index: 1;
-      }
    }
    &__icon {
       position: absolute;
@@ -48,19 +41,5 @@
       left: 50%;
       transform: translateX(-50%);
       z-index: 1;
-   }
-   &__form {
-      position: absolute;
-      min-width: 820px;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      left: 50%;
-      input {
-          padding-left: 28px;
-          width: 270px;
-          height: 45px;
-          border: 1.5px solid #c4c4c4;
-          border-radius: 20px;
-      }
    }
 }

@@ -12,6 +12,7 @@
 @import 'blocks/managers';
 @import 'blocks/algorithm';
 @import 'blocks/reviews';
+@import 'blocks/questions';
 
 * {
    box-sizing: border-box;
@@ -36,6 +37,18 @@ p {
 }
 .hide {
    display: none;
+}
+.fade {
+   animation-name: fade;
+   animation-duration: 1s;
+}
+@keyframes fade {
+   from {
+      opacity: 0.5;
+   }
+   to {
+      opacity: 1;
+   }
 }
 
 .title {
@@ -111,6 +124,28 @@ p {
    line-height: 27px;
    font-weight: 300;
    color: #ffffff;
+}
+.form {
+   position: absolute;
+   min-width: 820px;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   left: 50%;
+   &_input {
+      padding-left: 28px;
+      background-color: #ffffff;
+      width: 270px;
+      height: 45px;
+      border: 1.5px solid #c4c4c4;
+      border-radius: 20px;
+   }
+   &_textarea {
+      margin-top: 7px;
+      padding: 15px 0 0 28px;
+      width: 815px;
+      height: 73px;
+      border: 1.5px solid #c4c4c4;
+   }
 }
 
 @import 'base/media';

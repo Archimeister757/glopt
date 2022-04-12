@@ -286,7 +286,7 @@
             </h3>
             <div class="delivery__cards">
                <div class="delivery__card">
-                  <div class="delivery__card-hat">Доставка морем</div>
+                  <div class="hat">Доставка морем</div>
                   <div class="delivery__card-wrapper">
                      <div class="delivery__card-content">
                         <img
@@ -322,7 +322,7 @@
                   </div>
                </div>
                <div class="delivery__card">
-                  <div class="delivery__card-hat">Ж/Д доставка</div>
+                  <div class="hat">Ж/Д доставка</div>
                   <div class="delivery__card-wrapper">
                      <div class="delivery__card-content">
                         <img
@@ -358,7 +358,7 @@
                   </div>
                </div>
                <div class="delivery__card">
-                  <div class="delivery__card-hat">Автодоставка</div>
+                  <div class="hat">Автодоставка</div>
                   <div class="delivery__card-wrapper">
                      <div class="delivery__card-content">
                         <img
@@ -394,7 +394,7 @@
                   </div>
                </div>
                <div class="delivery__card">
-                  <div class="delivery__card-hat">Авиа доставка</div>
+                  <div class="hat">Авиа доставка</div>
                   <div class="delivery__card-wrapper">
                      <div class="delivery__card-content">
                         <img
@@ -443,20 +443,23 @@
                   alt="consultation"
                   class="consultation__icon"
                />
-               <form action="" class="consultation__form">
+               <form action="" class="form">
                   <input
+                     class="form_input"
                      required
                      name="name"
                      type="text"
                      placeholder="Ваше имя..."
                   />
                   <input
+                     class="form_input"
                      required
                      name="phone"
                      placeholder="Ваш номер телефона..."
                      type="text"
                   />
                   <input
+                     class="form_input"
                      required
                      name="email"
                      placeholder="Ваш e-mail..."
@@ -612,6 +615,43 @@
                      компании
                   </p>
                </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="questions">
+         <div class="container">
+            <div class="questions__wrapper">
+               <div class="hat">
+                  <h2 class="questions__title">Остались вопросы?</h2>
+                  <h3 class="questions__subtitle">Напишите нам!</h3>
+               </div>
+               <form action="" class="form">
+                  <input
+                     class="form_input"
+                     required
+                     name="name"
+                     type="text"
+                     placeholder="Ваше имя..."
+                  />
+                  <input
+                     class="form_input"
+                     required
+                     name="phone"
+                     placeholder="Ваш номер телефона..."
+                     type="text"
+                  />
+                  <input
+                     class="form_input"
+                     required
+                     name="email"
+                     placeholder="Ваш e-mail..."
+                     type="text"
+                  />
+                  
+                  <textarea class="form_textarea" placeholder="Сообщение..." name="" id="" cols="30" rows="10"></textarea>
+               </form>
+               <button class="btn btn_form btn_form-down">Отправить заявку</button>
             </div>
          </div>
       </section>

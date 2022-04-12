@@ -1,0 +1,29 @@
+.questions {
+   padding: 60px 0 80px 0;
+   background: url('../img/questions/bg.jpg') center (center/cover) no-repeat;
+   &__wrapper {
+      position: relative;
+      margin: 0 auto;
+      width: 896px;
+      height: 297px;
+      background-color: #ffffff;
+      div {
+         min-height: 70px;
+         padding-top: 17px;
+      }
+   }
+   &__title {
+      font-family: 'Roboto';
+      font-size: 19px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #ffffff;
+   }
+   &__subtitle {
+      font-family: 'Roboto';
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #ffffff;
+   }
+}

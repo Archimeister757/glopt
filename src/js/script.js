@@ -66,9 +66,9 @@ window.addEventListener('DOMContentLoaded', () => {
          slideIndex = slides.length;
       }
       slides.forEach((item) => {
-         item.style.display = 'none';
+         item.classList.add('hide', 'fade');
       });
-      slides[slideIndex - 1].style.display = 'block';
+      slides[slideIndex - 1].classList.remove('hide');
    }
 
    function plusSlides(n) {

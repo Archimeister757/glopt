@@ -10,22 +10,30 @@
    font-family: 'Roboto';
    text-transform: uppercase;
    cursor: pointer;
-}
-.btn_small {
-   width: 160px;
-}
-.btn_big {
-   display: block;
-   margin: 40px auto 0 auto;
-   width: 230px;
-   height: 57px;
-   font-size: 15px;
-   line-height: 17px;
-   font-weight: 700;
-}
-.btn_form {
-   padding-top: 3px;
-   width: 180px;
+   &_small {
+      width: 160px;
+   }
+   &_big {
+      display: block;
+      margin: 40px auto 0 auto;
+      width: 230px;
+      height: 57px;
+      font-size: 15px;
+      line-height: 17px;
+      font-weight: 700;
+   }
+   &_form {
+      padding-top: 3px;
+      width: 180px;
+      position: absolute;
+      bottom: -15%;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+      &-down {
+         bottom: 25px;
+      }
+   }
 }
 .back {
    position: absolute;

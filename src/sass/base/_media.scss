@@ -26,10 +26,10 @@
       }
       &__card {
          width: 230px;
-         &-hat {
-            margin-bottom: 15px;
-         }
       }
+   }
+   .hat {
+      margin-bottom: 15px;
    }
    .down {
       width: 225px;
@@ -99,15 +99,8 @@
          row-gap: 40px;
       }
    }
-   .consultation {
-      &__form {
-         min-width: 670px;
-         input {
-            width: 220px;
-         }
-      }
-   }
    .algorithm {
+      padding: 60px 0;
       &__wrapper {
          grid-template-columns: repeat(auto-fill, minmax(auto, 225px));
          grid-template-rows: auto;
@@ -115,7 +108,7 @@
       }
    }
    .down {
-      position: inherit;
+      position: static;
       width: auto;
       height: auto;
       &_1 {
@@ -129,6 +122,26 @@
       &_3 {
          left: auto;
          transform: translateX(0);
+      }
+   }
+   .arrow_back {
+      left: 37%;
+   }
+   .arrow_next {
+      right: 37%;
+   }
+   .form {
+      min-width: 670px;
+      &_input {
+         width: 220px;
+      }
+      &_textarea {
+         width: 670px;
+      }
+   }
+   .questions {
+      &__wrapper {
+         width: 725px;
       }
    }
 }
@@ -262,17 +275,31 @@
       &__title {
          font-size: 24px;
       }
-      &__form {
-         min-width: 488px;
-         input {
-            width: 160px;
-            padding-left: 15px;
-         }
-      }
    }
    .algorithm {
       &__wrapper {
          justify-content: space-around;
+      }
+   }
+   .arrow_back {
+      left: 33%;
+   }
+   .arrow_next {
+      right: 33%;
+   }
+   .form {
+      min-width: 488px;
+      &_input {
+         width: 160px;
+         padding-left: 15px;
+      }
+      &_textarea {
+         width: 488px;
+      }
+   }
+   .questions {
+      &__wrapper {
+         width: 100%;
       }
    }
 }
@@ -286,6 +313,7 @@
       padding: 25px;
       &__up {
          grid-template-columns: repeat(2, auto);
+         justify-content: space-around;
       }
       &__menu {
          width: 60%;
@@ -309,32 +337,32 @@
          }
       }
       &__text {
-         font-size: 13px;
+         font-size: 12px;
          text-align: center;
       }
       &__number {
          margin-bottom: 10px;
-         font-size: 15px;
+         font-size: 13px;
       }
       &__name {
-         font-size: 15px;
+         font-size: 14px;
       }
       &__title {
-         font-size: 35px;
+         font-size: 33px;
       }
       &__subtitle {
-         font-size: 20px;
+         font-size: 18px;
       }
       &__divider {
          margin: 30px auto 0;
       }
       &__block {
-         grid-template-columns: repeat(auto-fill, minmax(auto, 180px));
-         margin-top: 35px;
-         row-gap: 20px;
+         grid-template-columns: repeat(auto-fill, minmax(auto, 109px));
+         margin-top: 30px;
+         gap: 15px 15px;
       }
       &__descr {
-         font-size: 11px;
+         font-size: 9px;
       }
    }
    #item-1 {
@@ -383,11 +411,11 @@
                font-size: 13px;
             }
          }
-         &-hat {
-            min-height: 55px;
-            font-size: 14px;
-         }
       }
+   }
+   .hat {
+      min-height: 55px;
+      font-size: 14px;
    }
    .consultation {
       &__title {
@@ -406,15 +434,6 @@
          }
       }
 
-      &__form {
-         display: grid;
-         grid-template-rows: repeat(3, 45px);
-         row-gap: 10px;
-         min-width: 250px;
-         input {
-            width: 250px;
-         }
-      }
       &__icon {
          width: 85px;
          height: 85px;
@@ -432,6 +451,25 @@
          }
       }
    }
+   .reviews {
+      padding: 0 0 40px 0;
+   }
+   .arrow_back {
+      left: 30%;
+   }
+   .arrow_next {
+      right: 30%;
+   }
+   .form {
+      display: grid;
+      grid-template-rows: repeat(3, 45px);
+      row-gap: 10px;
+      min-width: 250px;
+      &_input {
+         width: 250px;
+      }
+   }
+
    .title {
       font-size: 20px;
    }
@@ -455,5 +493,14 @@
    }
    .subheader {
       font-size: 13px;
+   }
+
+   @media (max-width: 430px) {
+      .arrow_back {
+         left: 20%;
+      }
+      .arrow_next {
+         right: 20%;
+      }
    }
 }
