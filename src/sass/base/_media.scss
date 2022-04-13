@@ -288,13 +288,16 @@
       right: 33%;
    }
    .form {
-      min-width: 488px;
+      min-width: 473px;
       &_input {
-         width: 160px;
+         width: 155px;
          padding-left: 15px;
+         font-size: 12px;
       }
       &_textarea {
-         width: 488px;
+         width: 473px;
+         padding: 10px 0 0 15px;
+         font-size: 12px;
       }
    }
    .questions {
@@ -387,6 +390,9 @@
    .btn_form {
       width: 160px;
       height: 40px;
+      &-down {
+         bottom: 20px;
+      }
    }
    .advantages {
       padding: 40px 10px;
@@ -453,6 +459,20 @@
    }
    .reviews {
       padding: 0 0 40px 0;
+      
+   }
+   .questions {
+      padding: 40px 0;
+      &__wrapper {
+         min-height: 405px;
+         width: 280px;
+      }
+      &__title {
+         font-size: 17px;
+      }
+      &__subtitle {
+         font-size: 12px;
+      }
    }
    .arrow_back {
       left: 30%;
@@ -464,9 +484,14 @@
       display: grid;
       grid-template-rows: repeat(3, 45px);
       row-gap: 10px;
-      min-width: 250px;
+      min-width: 240px;
       &_input {
-         width: 250px;
+         width: 240px;
+         height: 40px;
+      }
+      &_textarea {
+         margin-top: auto;
+         width: 240px;
       }
    }
 
