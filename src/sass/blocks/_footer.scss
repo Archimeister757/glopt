@@ -1,0 +1,76 @@
+.footer {
+   padding: 25px 0;
+   background-color: #25333c;
+   &__wrapper {
+      display: grid;
+      grid-template-columns: 525px 345px;
+      justify-content: space-between;
+      &-down {
+         display: grid;
+         grid-template-columns: minmax(140px, auto) minmax(190px, auto) minmax(
+               150px,
+               auto
+            );
+         justify-content: space-between;
+      }
+   }
+   &__left {
+      display: grid;
+      grid-template-columns: 71px 420px;
+      justify-content: space-between;
+      align-items: center;
+   }
+   &__right {
+      display: grid;
+      grid-template-columns: 165px 160px;
+      justify-content: space-between;
+      align-items: center;
+   }
+   &__descr {
+      font-family: Roboto;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 700;
+      color: #ffffff;
+   }
+   &__logo {
+      width: 68px;
+      height: 71px;
+   }
+   &__divider {
+      margin: 25px auto;
+      width: 100%;
+      height: 1.5px;
+      opacity: 0.2;
+      background-color: #fff;
+   }
+   &__text {
+      position: relative;
+      opacity: 0.6;
+      font-family: Roboto;
+      font-size: 13px;
+      line-height: 17px;
+      font-weight: 300;
+      color: #ffffff;
+      &:last-child {
+         &::after {
+            content: '';
+            position: absolute;
+            background: url('../icons/footer/logo2.png');
+            width: 30px;
+            height: 32px;
+            opacity: 0.78;
+            top: 25%;
+            transform: translateY(-50%);
+            right: 10px;
+         }
+      }
+   }
+   &__policy {
+      font-family: Roboto;
+      font-size: 13px;
+      line-height: 17px;
+      font-weight: 300;
+      color: $main-color;
+   }
+}

@@ -9,9 +9,6 @@
                160px
             );
       }
-      &__phone {
-         display: none;
-      }
    }
    .logistics {
       &__blocks {
@@ -33,6 +30,11 @@
    }
    .down {
       width: 225px;
+   }
+   .phone {
+      &:nth-child(3) {
+         display: none;
+      }
    }
 }
 
@@ -144,6 +146,36 @@
          width: 725px;
       }
    }
+   .footer {
+      &__wrapper {
+         grid-template-columns: repeat(2, 345px);
+         &-down {
+            grid-template-columns: minmax(120px, auto) minmax(175px, auto) minmax(
+                  150px,
+                  auto
+               );
+         }
+      }
+      &__left {
+         grid-template-columns: 71px 245px;
+      }
+      &__right {
+         grid-template-columns: 165px 140px;
+         justify-content: space-around;
+      }
+      &__descr {
+         font-size: 14px;
+      }
+      &__text,
+      &__policy {
+         font-size: 12px;
+         &:last-child {
+            &::after {
+               right: 18px;
+            }
+         }
+      }
+   }
 }
 
 @media (max-width: 768px) {
@@ -247,10 +279,7 @@
             }
          }
       }
-      &__phone {
-         display: grid;
-         margin-right: 10px;
-      }
+
       &__name {
          font-size: 19px;
       }
@@ -263,6 +292,12 @@
       &__block {
          grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
          row-gap: 25px;
+      }
+   }
+   .phone {
+      &:nth-child(3) {
+         display: grid;
+         margin-right: 10px;
       }
    }
    .header {
@@ -305,6 +340,14 @@
          width: 100%;
       }
    }
+   .footer {
+      &__wrapper {
+         grid-template-columns: 71px 345px;
+      }
+      &__descr {
+         display: none;
+      }
+   }
 }
 
 @media (max-width: 576px) {
@@ -339,14 +382,7 @@
             width: 100%;
          }
       }
-      &__text {
-         font-size: 12px;
-         text-align: center;
-      }
-      &__number {
-         margin-bottom: 10px;
-         font-size: 13px;
-      }
+
       &__name {
          font-size: 14px;
       }
@@ -366,6 +402,16 @@
       }
       &__descr {
          font-size: 9px;
+      }
+   }
+   .phone {
+      &__text {
+         font-size: 12px;
+         text-align: center;
+      }
+      &__number {
+         margin-bottom: 10px;
+         font-size: 13px;
       }
    }
    #item-1 {
@@ -459,7 +505,6 @@
    }
    .reviews {
       padding: 0 0 40px 0;
-      
    }
    .questions {
       padding: 40px 0;
@@ -493,6 +538,34 @@
          margin-top: auto;
          width: 240px;
       }
+   }
+
+   .footer {
+      padding: 25px 15px;
+      &__wrapper {
+         grid-template-columns: 71px 140px;
+         &-down {
+            grid-template-columns: auto;
+            grid-template-rows: repeat(3, 35px);
+            justify-content: center;
+            justify-items: center;
+         }
+      }
+      &__right {
+         grid-template-columns: auto;
+         grid-template-rows: repeat(2, auto);
+      }
+      &__text {
+         &:last-child {
+            &::after {
+               right: -38px;
+               top: 15%;
+            }
+         }
+      }
+   }
+   .phone {
+      justify-content: center;
    }
 
    .title {

@@ -37,27 +37,6 @@
          }
       }
    }
-   &__phone {
-      display: grid;
-      justify-content: right;
-   }
-   &__text {
-      font-family: 'Roboto';
-      font-size: 14px;
-      line-height: 24px;
-      font-weight: 300;
-      text-align: right;
-      color: #ffffff;
-   }
-   &__number {
-      font-family: 'Roboto';
-      right: 0;
-      font-size: 19px;
-      line-height: 24px;
-      font-weight: 700;
-      color: #ffffff;
-      text-decoration: none;
-   }
    &__header {
       display: grid;
       justify-content: center;
